@@ -51,13 +51,14 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderStyle: 'dashed',
         borderColor:"red",
-        borderRadius:3,
+        borderRadius:5,
         marginBottom:20,
     },
     btn: {
         padding:15,
         borderRadius: 30,
-        backgroundColor:"#4287f5"
+        backgroundColor:"#4287f5",
+        color:"white"
     },
     secondBox:{
         borderWidth:1,

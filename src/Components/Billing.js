@@ -24,30 +24,33 @@ const Billing = ({navigation}) => {
                         <TouchableOpacity onPress={()=> navigation.navigate('Address')}><Text style={{padding:10,backgroundColor:"#f4f0fa",borderRadius:10}}>Edit</Text></TouchableOpacity>
                     </View>
                 </View>
-                <View style={styles.secondBox}>
-                    <Text style={{fontWeight:"bold",marginBottom:10}}>Address 2</Text>
-                    <Text style={{marginBottom:10}}>House#46,Shah Makhdum Avenue{"\n"}
-                        Uttara,Dhaka{"\n"}
-                        Bangladesh</Text>
-                    <View style={{flexDirection:"row",justifyContent:"flex-end"}}>
-                        <TouchableOpacity><Text style={{padding:10,backgroundColor:"#f4f0fa",borderRadius:10,marginRight:10}}>Delete</Text></TouchableOpacity>
-                        <TouchableOpacity onPress={()=> navigation.navigate('Address')}><Text style={{padding:10,backgroundColor:"#f4f0fa",borderRadius:10}}>Edit</Text></TouchableOpacity>
-                    </View>
-                </View>
-                <View style={styles.secondBox}>
-                    <Text style={{fontWeight:"bold",marginBottom:10}}>Address 3</Text>
-                    <Text style={{marginBottom:10}}>House#46,Shah Makhdum Avenue{"\n"}
-                        Uttara,Dhaka{"\n"}
-                        Bangladesh</Text>
-                    <View style={{flexDirection:"row",justifyContent:"flex-end"}}>
-                        <TouchableOpacity><Text style={{padding:10,backgroundColor:"#f4f0fa",borderRadius:10,marginRight:10}}>Delete</Text></TouchableOpacity>
-                        <TouchableOpacity onPress={()=> navigation.navigate('Address')}><Text style={{padding:10,backgroundColor:"#f4f0fa",borderRadius:10}}>Edit</Text></TouchableOpacity>
-                    </View>
-                </View>
+
+                {/*<View style={styles.secondBox}>*/}
+                {/*    <Text style={{fontWeight:"bold",marginBottom:10}}>Address 2</Text>*/}
+                {/*    <Text style={{marginBottom:10}}>House#46,Shah Makhdum Avenue{"\n"}*/}
+                {/*        Uttara,Dhaka{"\n"}*/}
+                {/*        Bangladesh</Text>*/}
+                {/*    <View style={{flexDirection:"row",justifyContent:"flex-end"}}>*/}
+                {/*        <TouchableOpacity><Text style={{padding:10,backgroundColor:"#f4f0fa",borderRadius:10,marginRight:10}}>Delete</Text></TouchableOpacity>*/}
+                {/*        <TouchableOpacity onPress={()=> navigation.navigate('Address')}><Text style={{padding:10,backgroundColor:"#f4f0fa",borderRadius:10}}>Edit</Text></TouchableOpacity>*/}
+                {/*    </View>*/}
+                {/*</View>*/}
+
+                {/*<View style={styles.secondBox}>*/}
+                {/*    <Text style={{fontWeight:"bold",marginBottom:10}}>Address 3</Text>*/}
+                {/*    <Text style={{marginBottom:10}}>House#46,Shah Makhdum Avenue{"\n"}*/}
+                {/*        Uttara,Dhaka{"\n"}*/}
+                {/*        Bangladesh</Text>*/}
+                {/*    <View style={{flexDirection:"row",justifyContent:"flex-end"}}>*/}
+                {/*        <TouchableOpacity><Text style={{padding:10,backgroundColor:"#f4f0fa",borderRadius:10,marginRight:10}}>Delete</Text></TouchableOpacity>*/}
+                {/*        <TouchableOpacity onPress={()=> navigation.navigate('Address')}><Text style={{padding:10,backgroundColor:"#f4f0fa",borderRadius:10}}>Edit</Text></TouchableOpacity>*/}
+                {/*    </View>*/}
+                {/*</View>*/}
+
                 <View style={styles.noteBox}>
                     <Text style={{fontWeight:"bold",marginBottom:10}}>This is a very important note!</Text>
                     <Text style={{marginBottom:10}}>Writing headlines for blog post is mush science and probably cool audience</Text>
-                    <TouchableOpacity onPress={()=> navigation.navigate('Address')}><Text style={{backgroundColor:"#4287f5",width:110,padding:10,borderRadius:30,alignContent:"center",color:"white"}}>New Address</Text></TouchableOpacity>
+                    <TouchableOpacity onPress={()=> navigation.navigate('Address')}><Text style={styles.btn}>New Address</Text></TouchableOpacity>
                 </View>
             </View>
         </ScrollView>
@@ -77,13 +80,15 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderStyle: 'dashed',
         borderColor:"red",
-        borderRadius:3,
+        borderRadius:5,
         marginBottom:20,
     },
     btn: {
         padding:15,
         borderRadius: 30,
-        backgroundColor:"#4287f5"
+        backgroundColor:"#4287f5",
+        alignSelf: "flex-start",
+        color:"white"
     },
     secondBox:{
         borderWidth:1,
@@ -97,7 +102,7 @@ const styles = StyleSheet.create({
         borderWidth:1,
         borderColor: "grey",
         borderStyle: "dashed",
-        borderRadius:3,
+        borderRadius:5,
         padding:20,
         marginBottom:10,
         backgroundColor:"#c1f5f3"
